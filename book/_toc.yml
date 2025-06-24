@@ -1,13 +1,11 @@
 format: jb-book
 root: intro.md
 
-parts:
-  - caption: Contents
-    chapters:
-    - file: some_content/overview.md
-      sections:
-      - file: some_content/text_and_code.ipynb
-    - file: project/Deeltjes.ipynb
-    - file: references.md
-    - file: changelog.md
-    - file: credits.md
+chapters:
+- file: Overzicht.md
+- file: project/Intro.ipynb
+- file: project/Deeltjes.ipynb
+- file: project/Classes.ipynb
+#- file: references.md
+#- file: changelog.md
+- file: credits.md

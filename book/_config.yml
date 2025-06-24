@@ -1,4 +1,4 @@
-title: TeachBooks template                           # Replace this with your own book title
+title: Python simulations for physicists                            # Replace this with your own book title
 author: TeachBooks Team, built with <a href="https://teachbooks.io">TeachBooks</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a>
                                                      # Replace TeachBooks Teams with your own name in the line above
 
@@ -6,7 +6,6 @@ execute:
   execute_notebooks: "off"                           # Replace this if you want don't have notebooks with output and you want to add notebook output during build
 
 only_build_toc_files: true                           # Replace this with false if you want to build all files in the book, allowing you to refer to pages which are not included in the table of contents
-
 
 html:
   favicon : "figures/TB_favicon.ico"                 # Replace this with your own favicon
