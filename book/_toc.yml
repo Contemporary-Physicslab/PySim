@@ -1,8 +1,7 @@
 format: jb-book
-root: intro.md
+root: Overzicht.md
 
 chapters:
-- file: Overzicht.md
 - file: project/Intro.ipynb
 - file: project/Deeltjes.ipynb
 - file: project/Classes.ipynb
