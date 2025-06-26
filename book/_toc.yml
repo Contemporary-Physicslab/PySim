@@ -3,6 +3,14 @@ root: Overzicht.md
 
 chapters:
 - file: project/Intro.ipynb
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Software.md
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course%20files/Notebook%201/Notebook%201%20Python%20Basics.ipynb
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course%20files/Notebook%202/Notebook%202%20Functions.ipynb
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course%20files/Notebook%203/Notebook%203%20Program%20Flow%20Control.ipynb
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course%20files/Notebook%204/Notebook%204%20Scientific%20Computing.ipynb
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course%20files/Notebook%205/Notebook%205%20Data%20in%20Python.ipynb
+- external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course%20files/Notebook%206/Notebook%206%20Measurement%20uncertainty.ipynb
+
 - file: project/Deeltjes.ipynb
 - file: project/Classes.ipynb
 #- file: references.md
