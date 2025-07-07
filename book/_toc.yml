@@ -13,8 +13,9 @@ chapters:
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 6/Notebook 6 Measurement uncertainty.ipynb
 
 - file: project/Basics.ipynb
-- file: project/Deeltjes.ipynb
 - file: project/Classes.ipynb
+- file: project/Deeltjes.ipynb
+
 #- file: references.md
 #- file: changelog.md
 - file: credits.md
