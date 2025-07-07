@@ -15,6 +15,7 @@ chapters:
 - file: project/Basics.ipynb
 - file: project/Classes.ipynb
 - file: project/Deeltjes.ipynb
+- file: project/Botsingsmodel.ipynb
 
 #- file: references.md
 #- file: changelog.md
