@@ -16,7 +16,7 @@ chapters:
 - file: project/Classes.ipynb
 - file: project/Deeltjes.ipynb
 - file: project/Botsingsmodel.ipynb
-- external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
+# - external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
 
 #- file: references.md
 #- file: changelog.md
