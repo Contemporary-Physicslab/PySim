@@ -14,6 +14,15 @@ chapters:
 
 - file: Github.md
   sections:
+  - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/version_control/version_control.md
+  - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/workflows/git/intro.md
+    sections:
+    - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/workflows/git/github.md
+    - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/workflows/git/commits_remote.md
+    - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/workflows/git/commits_local.md
+    - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/workflows/git/cloning.md
+    - external: https://github.com/TeachBooks/learn-programming/blob/mude-2025/book/workflows/git/vscode.md
+
 #   - file: why
 #   - file: start
   #- external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
