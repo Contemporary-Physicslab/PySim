@@ -2,7 +2,7 @@ format: jb-book
 root: Overzicht.md
 
 chapters:
-- file: Python basics.md
+- file: Pythonbasics.md
   sections:
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Software.md
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 1/Notebook 1 Python Basics.ipynb
