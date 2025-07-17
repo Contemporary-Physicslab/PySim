@@ -28,17 +28,21 @@ chapters:
 
 
 - file: Q2/Q2.md
-#   sections:
-#   - file: 10 deeltjes, via classes, met een loop, en sneller programmeren - introductie van druk en temperatuur
-#     section:
-#       - file: zwaartekracht en massa verschil (dichtheid) deeltjes
-#       - file: diffusie, brownian motion
-#   - file: 100 deeltjes, met een zeflde begin snelheid, en dan kijken naar histogram.
-#   - file: temperatuur verhoging door 1 wand, en p(t) en T(t) als grafiek en p(T)
-#   - file: 10 deeltjes, met bewegend wand, eerst isotherm (snelheid van deeltejs niet gewijzigd) - snelheid van deeltejs verandert wel door beweging vd wand. p(t) en p(V)
-#     section:
-#     - file: advanced: gebruik een wand als thermische lek waarbij je E_kin,avg vergelijkt met E_temp buiten
-#   - file: entropie temperatuur uitwisseling met de omgeving. 
+  sections:
+  - file: Q2/druktemp.ipynb
+    sections:
+    - file: dichtheid.ipynb
+    - file: brownianmotion.ipynb
+  - file: Boltzmann.ipynb
+  - file: Thermostaat.ipynb
+  - file: arbeid.ipynb
+    sections:
+    - file: thermischelek.ipynb
+  - file: entropie.ipynb
+
+
+
+
 
 #- file: references.md
 #- file: changelog.md
