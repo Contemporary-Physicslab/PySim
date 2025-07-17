@@ -38,14 +38,14 @@ chapters:
   sections:
   - file: Q2/druktemp.ipynb
     sections:
-    - file: dichtheid.ipynb
-    - file: brownianmotion.ipynb
-  - file: Boltzmann.ipynb
-  - file: Thermostaat.ipynb
-  - file: arbeid.ipynb
+    - file: Q2/dichtheid.ipynb
+    - file: Q2/brownianmotion.ipynb
+  - file: Q2/Boltzmann.ipynb
+  - file: Q2/Thermostaat.ipynb
+  - file: Q2/arbeid.ipynb
     sections:
-    - file: thermischelek.ipynb
-  - file: entropie.ipynb
+    - file: Q2/thermischelek.ipynb
+  - file: Q2/entropie.ipynb
 
 
 
