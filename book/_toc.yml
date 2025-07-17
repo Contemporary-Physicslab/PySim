@@ -2,7 +2,7 @@ format: jb-book
 root: Overzicht.md
 
 chapters:
-- file: project/Intro.ipynb
+- file: Python basics.md
   sections:
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Software.md
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 1/Notebook 1 Python Basics.ipynb
@@ -12,20 +12,22 @@ chapters:
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 5/Notebook 5 Data in Python.ipynb
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 6/Notebook 6 Measurement uncertainty.ipynb
 
-# - file: github
+- file: Github.md
 #   sections:
 #   - file: why
 #   - file: start
 #   - external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
 
-- file: Q1
+- file: Q1/Q1.md
   sections:
-  - file: project/Basics.ipynb
-  - file: project/Classes.ipynb
-  - file: project/Deeltjes.ipynb
-  - file: project/Botsingsmodel.ipynb
+  - file: project/Intro.ipynb
+  - file: Q1/Basics.ipynb
+  - file: Q1/Classes.ipynb
+  - file: Q1/Deeltjes.ipynb
+  - file: Q1/Botsingsmodel.ipynb
 
-# - file: Q2
+
+- file: Q2/Q2.md
 #   sections:
 #   - file: 10 deeltjes, via classes, met een loop, en sneller programmeren - introductie van druk en temperatuur
 #     section:
@@ -40,4 +42,4 @@ chapters:
 
 #- file: references.md
 #- file: changelog.md
-- file: credits.md
+#- file: credits.md
