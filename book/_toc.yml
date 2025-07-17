@@ -12,11 +12,31 @@ chapters:
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 5/Notebook 5 Data in Python.ipynb
     - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 6/Notebook 6 Measurement uncertainty.ipynb
 
-- file: project/Basics.ipynb
-- file: project/Classes.ipynb
-- file: project/Deeltjes.ipynb
-- file: project/Botsingsmodel.ipynb
-- external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
+# - file: github
+#   sections:
+#   - file: why
+#   - file: start
+#   - external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
+
+- file: Q1
+  sections:
+  - file: project/Basics.ipynb
+  - file: project/Classes.ipynb
+  - file: project/Deeltjes.ipynb
+  - file: project/Botsingsmodel.ipynb
+
+# - file: Q2
+#   sections:
+#   - file: 10 deeltjes, via classes, met een loop, en sneller programmeren - introductie van druk en temperatuur
+#     section:
+#       - file: zwaartekracht en massa verschil (dichtheid) deeltjes
+#       - file: diffusie, brownian motion
+#   - file: 100 deeltjes, met een zeflde begin snelheid, en dan kijken naar histogram.
+#   - file: temperatuur verhoging door 1 wand, en p(t) en T(t) als grafiek en p(T)
+#   - file: 10 deeltjes, met bewegend wand, eerst isotherm (snelheid van deeltejs niet gewijzigd) - snelheid van deeltejs verandert wel door beweging vd wand. p(t) en p(V)
+#     section:
+#     - file: advanced: gebruik een wand als thermische lek waarbij je E_kin,avg vergelijkt met E_temp buiten
+#   - file: entropie temperatuur uitwisseling met de omgeving. 
 
 #- file: references.md
 #- file: changelog.md
