@@ -16,7 +16,8 @@ chapters:
   sections:
 #   - file: why
 #   - file: start
-  - external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
+  #- external: https://github.com/the-turing-way/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
+  - external: https://github.com/FreekPols/the-turing-way/blob/main/book/website/collaboration/github-novice/github-novice-firststeps.md
 
 - file: Q1/Q1.md
   sections:
