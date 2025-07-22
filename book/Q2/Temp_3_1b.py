@@ -133,8 +133,9 @@ class ControlVol:
         return np.dot(self.impulse[:, 1], self.resize_speed) / DT
     
 def init():
-    ax1.set_xlim(0, cv.size[0])
-    ax1.set_ylim(0, cv.size[1])
+    ax1.set_xlim(0, STARTSIZE)
+    ax1.set_ylim(0, STARTSIZE)
+
     ax1.set_aspect('equal')
     ax2.set_xlim(0, cv.volume)
     ax2.set_ylim(0, cv.pressure)
@@ -148,6 +149,10 @@ def init():
 
 def animate(frame):
     cv.move()
+
+    # moving boundaries
+    ax1.axhline(y=cv.size[0], xmin=0, xmax=cv.size[1],color="red")
+    ax1.axvline(x=cv.size[1], ymin=0, ymax=cv.size[0],color="red")
 
     ax2.set_xlim(0, max(cv.volumes))
     ax2.set_ylim(0, max(cv.pressures))
