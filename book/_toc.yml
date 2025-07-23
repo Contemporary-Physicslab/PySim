@@ -27,7 +27,7 @@ chapters:
   
 - file: Q1/Q1.md
   sections:
-  - file: project/Intro.ipynb
+  - file: Q1/Intro.ipynb
   - file: Q1/Basics.ipynb
   - file: Q1/Classes.ipynb
   - file: Q1/Deeltjes.ipynb
@@ -36,7 +36,7 @@ chapters:
 
 - file: Q2/Q2.md
   sections:
-  - file: Q2/recap.ipynb
+  - file: Q2/Recap.ipynb
   - file: Q2/druktemp.ipynb
     sections:
     - file: Q2/dichtheid.ipynb
