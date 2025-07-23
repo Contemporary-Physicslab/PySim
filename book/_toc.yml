@@ -36,6 +36,7 @@ chapters:
 
 - file: Q2/Q2.md
   sections:
+  - file: Q2/recap.ipynb
   - file: Q2/druktemp.ipynb
     sections:
     - file: Q2/dichtheid.ipynb
