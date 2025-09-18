@@ -39,8 +39,8 @@ chapters:
   - file: Q2/Recap.ipynb
   - file: Q2/druktemp.ipynb
     sections:
-    - file: Q2/dichtheid.ipynb
-    - file: Q2/brownianmotion.ipynb
+      - file: Q2/dichtheid.ipynb
+      - file: Q2/brownianmotion.ipynb
   - file: Q2/Boltzmann.ipynb
   - file: Q2/Thermostaat.ipynb
   - file: Q2/arbeid.ipynb
