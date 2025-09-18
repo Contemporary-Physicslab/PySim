@@ -4,13 +4,13 @@ root: Overzicht.md
 chapters:
 - file: Pythonbasics.md
   sections:
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Software.md
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 1/Notebook 1 Python Basics.ipynb
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 2/Notebook 2 Functions.ipynb
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 3/Notebook 3 Program Flow Control.ipynb
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 4/Notebook 4 Scientific Computing.ipynb
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 5/Notebook 5 Data in Python.ipynb
-    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/main/book/Course files/Notebook 6/Notebook 6 Measurement uncertainty.ipynb
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Software.md
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Notebook 1/Notebook 1 Python Basics.ipynb
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Notebook 2/Notebook 2 Functions.ipynb
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Notebook 3/Notebook 3 Program Flow Control.ipynb
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Notebook 4/Notebook 4 Scientific Computing.ipynb
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Notebook 5/Notebook 5 Data in Python.ipynb
+    - external: https://github.com/Contemporary-Physicslab/FYPLC/blob/book/Course files/Notebook 6/Notebook 6 Measurement uncertainty.ipynb
 
 - file: Github.md
   sections:
