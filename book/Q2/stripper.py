@@ -11,7 +11,7 @@ OUTPUT_DIR = Path("./studentenversie")   # mag ook absoluut pad zijn
 
 MARK_START = "### begin-solution"
 MARK_END   = "### end-solution"
-PLACEHOLDER = "# your code\n"
+PLACEHOLDER = "#your code/answer\n"
 
 def strip_and_replace(src: str) -> str:
     out_lines = []
