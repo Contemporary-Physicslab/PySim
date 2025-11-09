@@ -57,7 +57,7 @@ chapters:
         # - file: Content/PySim/8_thermostaat.ipynb
         # - file: Content/PySim/9_entropie.ipynb
 
-- file: Q2/studentenversie/studentenversie.md
+- file: Q2/studentenversie/studentversie.md
   sections:
   - file: Q2/studentenversie/1_intro_sim.ipynb
   - file: Q2/studentenversie/2_deeltjes_model.ipynb
