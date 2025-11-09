@@ -38,7 +38,7 @@ chapters:
   sections:
   - file: Q2/1_intro_sim.ipynb
   - file: Q2/2_deeltjes_model.ipynb
-  - file: Q2/3_Recap.ipynb
+  - file: Q2/3_recap.ipynb
   - file: Q2/4_brownianmotion.ipynb
   - file: Q2/5_druktemp.ipynb    
   - file: Q2/6_boltzmann.ipynb
