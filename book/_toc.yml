@@ -63,8 +63,8 @@ chapters:
   - file: Q2/studentenversie/2_deeltjes_model.ipynb
   - file: Q2/studentenversie/3_recap.ipynb
   - file: Q2/studentenversie/4_brownianmotion.ipynb
-  - file: Content/studentenversie/5_druktemp.ipynb
-  - file: Content/studentenversie/6_boltzmann.ipynb
+  - file: Q2/studentenversie/5_druktemp.ipynb
+  - file: Q2/studentenversie/6_boltzmann.ipynb
 
 
 #- file: references.md
