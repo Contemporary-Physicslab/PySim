@@ -42,9 +42,9 @@ chapters:
   - file: Q2/4_brownianmotion.ipynb
   - file: Q2/5_druktemp.ipynb    
   - file: Q2/6_boltzmann.ipynb
-
-  - file: Q2/arbeid.ipynb
-  - file: Q2/Thermostaat.ipynb
+  - file: Q2/7_arbeid.ipynb
+  - file: Q2/8_thermostaat.ipynb
+  
   - file: Q2/entropie.ipynb
 
         # - file: Content/PySim/1_intro_sim.ipynb
