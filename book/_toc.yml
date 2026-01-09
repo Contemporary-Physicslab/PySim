@@ -43,19 +43,9 @@ chapters:
   - file: Q2/5_druktemp.ipynb    
   - file: Q2/6_boltzmann.ipynb
   - file: Q2/7_arbeid.ipynb
-  - file: Q2/8_thermostaat.ipynb
-  
+  - file: Q2/8_thermostaat.ipynb  
   - file: Q2/9_entropie.ipynb
-
-        # - file: Content/PySim/1_intro_sim.ipynb
-        # - file: Content/PySim/2_deeltjes_model.ipynb
-        # - file: Content/PySim/3_recap.ipynb
-        # - file: Content/PySim/4_brownianmotion.ipynb
-        # - file: Content/PySim/5_druktemp.ipynb
-        # - file: Content/PySim/6_boltzmann.ipynb
-        # - file: Content/PySim/7_arbeid.ipynb
-        # - file: Content/PySim/8_thermostaat.ipynb
-        # - file: Content/PySim/9_entropie.ipynb
+  - file: Q2/10_voltaische_cel.ipynb
 
 - file: Q2/studentenversie/studentversie.md
   sections:
@@ -66,7 +56,8 @@ chapters:
   - file: Q2/studentenversie/5_druktemp.ipynb
   - file: Q2/studentenversie/6_boltzmann.ipynb
   - file: Q2/studentenversie/7_arbeid.ipynb
-
+  - file: Q2/studentenversie/8_thermostaat.ipynb
+  - file: Q2/studentenversie/9_entropie.ipynb
 
 #- file: references.md
 #- file: changelog.md
