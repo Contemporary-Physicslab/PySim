@@ -45,7 +45,7 @@ chapters:
   - file: Q2/7_arbeid.ipynb
   - file: Q2/8_thermostaat.ipynb
   
-  - file: Q2/entropie.ipynb
+  - file: Q2/9_entropie.ipynb
 
         # - file: Content/PySim/1_intro_sim.ipynb
         # - file: Content/PySim/2_deeltjes_model.ipynb
