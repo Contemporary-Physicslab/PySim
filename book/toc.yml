@@ -1,6 +1,8 @@
 version: 1
 project:
   toc:    
+    - file: Intro.md
+
     - file: Q1\Q1.md
       children:
         - file: Q1\Intro.ipynb
@@ -22,15 +24,15 @@ project:
         - file: sims\9_entropie.ipynb
         - file: sims\10_voltaische_cel.ipynb
 
-    - file: Q2\studentenversie\studentversie.md
+    - file: simstudentenversie\studentversie.md
       children:
-        - file: studentenversie\sims\1_intro_sim.ipynb
-        - file: studentenversie\sims\2_deeltjes_model.ipynb
-        - file: studentenversie\sims\3_recap.ipynb
-        - file: studentenversie\sims\4_brownianmotion.ipynb
-        - file: studentenversie\sims\5_druktemp.ipynb
-        - file: studentenversie\sims\6_boltzmann.ipynb
-        - file: studentenversie\sims\7_arbeid.ipynb
-        - file: studentenversie\sims\8_thermostaat.ipynb
-        - file: studentenversie\sims\9_entropie.ipynb
-        - file: studentenversie\sims\10_voltaische_cel.ipynb
+        - file: simstudentenversie\1_intro_sim.ipynb
+        - file: simstudentenversie\2_deeltjes_model.ipynb
+        - file: simstudentenversie\3_recap.ipynb
+        - file: simstudentenversie\4_brownianmotion.ipynb
+        - file: simstudentenversie\5_druktemp.ipynb
+        - file: simstudentenversie\6_boltzmann.ipynb
+        - file: simstudentenversie\7_arbeid.ipynb
+        - file: simstudentenversie\8_thermostaat.ipynb
+        - file: simstudentenversie\9_entropie.ipynb
+        - file: simstudentenversie\10_voltaische_cel.ipynb
