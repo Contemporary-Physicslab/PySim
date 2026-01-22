@@ -1,34 +1,38 @@
 # This file was created automatically with `myst init --gh-pages` 🪄 💚
-# Ensure your GitHub Pages settings for this repository are set to deploy with **GitHub Actions**.
-
 name: MyST GitHub Pages Deploy
+
 on:
   push:
-    # Runs on pushes targeting the default branch
     branches: [main]
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+env:
+  # main site served from /<repo>
+  BASE_URL: /${{ github.event.repository.name }}
+
 permissions:
   contents: read
   pages: write
   id-token: write
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+
 concurrency:
   group: 'pages'
   cancel-in-progress: false
+
 jobs:
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
@@ -36,24 +40,43 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
 
-      - name: Build HTML (JB2) into subpath
+      # 1) Build MAIN site
+      - name: Build MAIN HTML
+        run: myst build --execute --html
+
+      # 2) Build JB2 site into a subpath and copy it into main output
+      - name: Build JB2 HTML into subpath
+        shell: bash
         run: |
-          # Check out JB2 branch into a separate folder
+          set -euo pipefail
+
+          # Ensure branch is available locally
+          git fetch --all --prune
+
+          # Add JB2 as a worktree
           git worktree add ../_JB2_build JB2
-      
-          # Build JB2 with BASE_URL pointing to /<repo>/JB2
-          cd ../_JB2_build
+
+          # Build JB2 with BASE_URL /<repo>/JB2
+          pushd ../_JB2_build
+
+          # Optional but helpful diagnostics:
+          ls -la
+          test -f myst.yml || (echo "JB2 branch mist myst.yml (met site:). Voeg een site-config toe." && exit 1)
+
           BASE_URL=/${{ github.event.repository.name }}/JB2 myst build --execute --html
-      
+
+          # Ensure output exists
+          test -d _build/html || (echo "JB2 build leverde geen _build/html op. Waarschijnlijk ontbreekt 'site:' in myst.yml." && exit 1)
+
+          popd
+
           # Copy JB2 site into main site's build folder under /JB2
-          cd -
           rm -rf _build/html/JB2
           mkdir -p _build/html/JB2
           cp -a ../_JB2_build/_build/html/. _build/html/JB2/
-      
-          # Clean up worktree
-          git worktree remove ../_JB2_build --force
 
+          # Clean up
+          git worktree remove ../_JB2_build --force
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -63,13 +86,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      # - name: Push to GitLab
-      #   run: |
-      #     git config --global user.name "GitHub Actions"
-      #     git config --global user.email "actions@github.com"
- 
-      #     # Add GitLab as a remote (update URL for your repo)
-      #     git remote add gitlab https://oauth2:${{ secrets.GLGH_PAT }}@gitlab.tudelft.nl/opentextbooks/MeRela.git
-      #     # Use force-with-lease for safety
-      #     git push gitlab
