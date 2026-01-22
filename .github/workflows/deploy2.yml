@@ -49,7 +49,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cd "${BOOK_DIR}"
+          cd "${book}"
           # Ensure branch is available locally
           git fetch --all --prune
 
