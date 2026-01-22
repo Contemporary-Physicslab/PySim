@@ -1,0 +1,16 @@
+version: 1
+project:
+  title: Python simulations for physicists
+  authors:
+    - name: Roel Smit & Freek Pols
+  bibliography:
+    - references.bib
+
+extends:
+  - toc.yml
+  
+site:
+  options:
+    favicon: figures/TB_favicon.ico
+    folders: true
+  template: book-theme
