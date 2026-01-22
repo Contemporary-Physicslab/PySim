@@ -6,6 +6,10 @@ project:
   bibliography:
     - references.bib
 
+  jupyter:
+    binder:
+      repo: https://github.com/executablebooks/thebe-binder-base
+
 extends:
   - toc.yml
   
