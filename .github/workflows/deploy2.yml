@@ -1,4 +1,3 @@
-# This file was created automatically with `myst init --gh-pages` 🪄 💚
 name: MyST GitHub Pages Deploy
 
 on:
@@ -6,8 +5,9 @@ on:
     branches: [main]
 
 env:
-  # main site served from /<repo>
-  BASE_URL: /${{ github.event.repository.name }}
+  REPO: PySim
+  BOOK_DIR: book
+  BASE_URL: /PySim
 
 permissions:
   contents: read
@@ -40,48 +40,39 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
 
-      # 1) Build MAIN site
+      # Build MAIN site (myst.yml lives in book/)
       - name: Build MAIN HTML
-        run: myst build --execute --html
-
-      # 2) Build JB2 site into a subpath and copy it into main output
-      - name: Build JB2 HTML into subpath
         shell: bash
         run: |
           set -euo pipefail
-          cd "${book}"
-          # Ensure branch is available locally
-          git fetch --all --prune
+          cd "${BOOK_DIR}"
+          myst build --execute --html
 
-          # Add JB2 as a worktree
+      # Build JB2 site and copy into MAIN output under /JB2
+      - name: Build JB2 HTML into /PySim/JB2
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch --all --prune
           git worktree add ../_JB2_build JB2
 
-          # Build JB2 with BASE_URL /<repo>/JB2
-          pushd ../_JB2_build
-
-          # Optional but helpful diagnostics:
-          ls -la
-          test -f myst.yml || (echo "JB2 branch mist myst.yml (met site:). Voeg een site-config toe." && exit 1)
-
-          BASE_URL=/${{ github.event.repository.name }}/JB2 myst build --execute --html
-
-          # Ensure output exists
-          test -d _build/html || (echo "JB2 build leverde geen _build/html op. Waarschijnlijk ontbreekt 'site:' in myst.yml." && exit 1)
-
+          # Build inside JB2 worktree, from book/
+          pushd ../_JB2_build/${BOOK_DIR}
+          BASE_URL=/${REPO}/JB2 myst build --execute --html
           popd
 
-          # Copy JB2 site into main site's build folder under /JB2
-          rm -rf _build/html/JB2
-          mkdir -p _build/html/JB2
-          cp -a ../_JB2_build/_build/html/. _build/html/JB2/
+          # Copy JB2 output into MAIN output folder
+          rm -rf ${BOOK_DIR}/_build/html/JB2
+          mkdir -p ${BOOK_DIR}/_build/html/JB2
+          cp -a ../_JB2_build/${BOOK_DIR}/_build/html/. ${BOOK_DIR}/_build/html/JB2/
 
-          # Clean up
           git worktree remove ../_JB2_build --force
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_build/html'
+          path: './book/_build/html'
 
       - name: Deploy to GitHub Pages
         id: deployment
