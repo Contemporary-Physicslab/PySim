@@ -11,6 +11,6 @@ extends:
   
 site:
   options:
-    favicon: figures/TB_favicon.ico
+    # favicon: figures/TB_favicon.ico
     folders: true
   template: book-theme
